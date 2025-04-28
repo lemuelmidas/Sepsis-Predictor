@@ -4,7 +4,10 @@ import pickle
 from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
 
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
 
 # Training the model (simple example - in production, you should load a pre-trained model)
 data = {
